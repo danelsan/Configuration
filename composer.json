@@ -1,0 +1,14 @@
+{
+	"name": "danelsan/configuration",
+	"version": "1.0.0",
+        "authors": [
+		{
+			"name": "Daniele Frulla",
+			"email": "daniele.frulla@gmail.com"
+		}
+	], 	
+	"description": "Configuration Library Helper for memory data",
+    	"autoload": {
+   		"classmap": ["src/"]
+    	}
+}
