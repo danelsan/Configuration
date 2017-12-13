@@ -1,8 +1,10 @@
 <?php
+declare(strict_types=1);
 
 use danelsan\configuration\ConfigArray;
+use \PHPUnit\Framework\TestCase;
 
-class ConfigArrayTest extends PHPUnit_Framework_TestCase {
+class ConfigArrayTest extends TestCase {
 	private $nameConfiguration = array(
 				'config1', 
 				'config2',
@@ -42,5 +44,9 @@ class ConfigArrayTest extends PHPUnit_Framework_TestCase {
 		$this->assertEquals( $this->config->get('t'), '10');
 		$this->assertEquals($this->config->get('e'), 3 );
 	}
-	
+
+	public function testToArray() {
+		$this->config->set('t', '10');
+		$this->assertEquals( array('t'=>'10', 'e'=>3,'f'=>0), $this->config->toArray() );
+	}	
 }

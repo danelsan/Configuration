@@ -1,8 +1,11 @@
 <?php
 
-use danelsan\configuration\Configuration;
+declare(strict_types=1);
 
-class ConfigTest extends PHPUnit_Framework_TestCase {
+use danelsan\configuration\Configuration;
+use PHPUnit\Framework\TestCase;
+
+class ConfigTest extends TestCase {
 	private $nameConfiguration = array(
 				'config1', 
 				'config2',

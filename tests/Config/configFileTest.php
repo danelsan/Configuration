@@ -1,8 +1,11 @@
 <?php
 
-use danelsan\configuration\ConfigFile;
+declare(strict_types=1);
 
-class ConfigFileTest extends PHPUnit_Framework_TestCase {
+use danelsan\configuration\ConfigFile;
+use PHPUnit\Framework\TestCase;
+
+class ConfigFileTest extends TestCase {
 	private $file;  
 	
 	private $dataConfig = array(
