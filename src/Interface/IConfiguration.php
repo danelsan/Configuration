@@ -20,5 +20,6 @@ interface  IConfiguration {
 	public function delete( $key );
 	public function setArray( array $array );
 	public function getArray();
+	public function toArray();
 }
 ?>

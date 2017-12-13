@@ -58,5 +58,9 @@ class  Configuration implements IConfiguration {
 	public function getArray() {
 		
 	}
+	
+	public function toArray() {
+		return $this->config->toArray();
+	}
 }
 ?>

@@ -72,5 +72,9 @@ class  ConfigFile implements IConfigData {
 		}
 		return $content;
 	}
+
+	public function toArray() {
+		return $this->data;
+	}
 }
 ?>

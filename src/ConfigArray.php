@@ -38,5 +38,9 @@ class  ConfigArray implements IConfigData {
 	public function write() {
 		
 	}
+
+	public function toArray() {
+		return $this->data;
+	}
 }
 ?>

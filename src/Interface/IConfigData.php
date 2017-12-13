@@ -15,5 +15,6 @@ interface  IConfigData {
 	public function set($key, $value);
 	public function delete(  $key  );
 	public function write();
+	public function toArray();
 }
 ?>
